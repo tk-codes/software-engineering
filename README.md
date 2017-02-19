@@ -6,4 +6,4 @@
 
 | # | Topic |
 |---| ------|
-|1|Project Planning|
+|1|[Project Planning](se2/01-project-planning.md)|
