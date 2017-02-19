@@ -82,15 +82,20 @@ Furthermore, diagrams should be easy to communicate.
 
 | # | Product | Project |
 |---| ------|-----------|
-| Planning / Target |"Client wants that" => Requirements  | "we proceed so" => Project planning
-| Actual | "we build so" => Software architecture| "we are here at the moment" => Project tracing
+| Planning / Target |"Client wants that" => Requirements (SRS) | "we proceed so" => Project planning
+| Actual | "we build so" => Software architecture (SAD) | "we are here at the moment" => Project tracing
+
+* SRS = Software Requirements Specification
+* SAD = Software Architecture Document
+
 
 In addition to that:
 - Work packages / backlog
 - Issue/Bug tracking
 - Impediments
 - Build results
-> These are changing continuously during the project. At the end, they all should be done/cleared.
+
+>>> These are changing continuously during the project. At the end, they all should be done/cleared.
 
 *Rule*
 - As early and as formal as possible -> Data model, Activity diagram, State diagram
