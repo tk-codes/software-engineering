@@ -23,9 +23,6 @@
 
 - [ ] Requirements: Did we understand our clients?
     - [ ] Use cases
-        - [ ] specified from user's point of view; communicable with clients
-        - [ ] describe functionalities (eg. why, what in which order and how often)
-        - [ ] in brief, casual or fully-dressed format
     - [ ] Domain model
     - [ ] Non-functional requirements
 - [ ] User Interface Design
@@ -46,7 +43,12 @@
     - [ ] DEV-Test-Prod Server setup
     - [ ] User stories (incl. time estimations) & Bug tracking (eg. Redmine, Jira)
 
-#### Requirements to work package (WP)
+#### From Use Case to work package (WP)
+
+**Use case**
+- specified from user's point of view; should be easy to communicate with clients
+- describe functionalities (eg. why, what in which order and how often)
+- in brief, casual or fully-dressed format
 
 **A work package** contains
 - ID, title
@@ -65,10 +67,35 @@
 *Rule*
 - Developer estimates the time for a work package
 - Client prioritises the work packages.
->>> **Not vice-versa!!**
+> **Not vice-versa!!**
 
 
 ## Diagrams
+
+Diagrams are often better than words.
+Furthermore, diagrams should be easy to communicate.
+
+![RUP](img/diagrams.PNG)
+![RUP](img/diagrams2.PNG)
+
+## Documents
+
+| # | Product | Project |
+|---| ------|-----------|
+| Planning / Target |"Client wants that" => Requirements  | "we proceed so" => Project planning
+| Actual | "we build so" => Software architecture| "we are here at the moment" => Project tracing
+
+In addition to that:
+- Work packages / backlog
+- Issue/Bug tracking
+- Impediments
+- Build results
+> These are changing continuously during the project. At the end, they all should be done/cleared.
+
+*Rule*
+- As early and as formal as possible -> Data model, Activity diagram, State diagram
+- As early and as thoroughly as possible --> Use cases brief, clickable prototypes (screenflow)
+
 
 
 
