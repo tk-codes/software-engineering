@@ -23,6 +23,9 @@
 
 - [ ] Requirements: Did we understand our clients?
     - [ ] Use cases
+        - [ ] specified from user's point of view; communicable with clients
+        - [ ] describe functionalities (eg. why, what in which order and how often)
+        - [ ] in brief, casual or fully-dressed format
     - [ ] Domain model
     - [ ] Non-functional requirements
 - [ ] User Interface Design
@@ -42,6 +45,32 @@
     - [ ] Code analysis tools
     - [ ] DEV-Test-Prod Server setup
     - [ ] User stories (incl. time estimations) & Bug tracking (eg. Redmine, Jira)
+
+#### Requirements to work package (WP)
+
+**A work package** contains
+- ID, title
+- Short description
+- Aceptance criteria
+- Time estimations
+- actual hours of work
+- Priority
+- Status (open, in progress, to test, done)
+- Category (Epic)
+
+*Recommendations:*
+- Maximum 8 hours for a work package
+- Allocate only as many work packages as it fits into an iteration. 
+
+*Rule*
+- Developer estimates the time for a work package
+- Client prioritises the work packages.
+>>> **Not vice-versa!!**
+
+
+## Diagrams
+
+
 
 
 
