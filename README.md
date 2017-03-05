@@ -15,3 +15,4 @@
 | # | Topic |
 |---| ------|
 |1|[Project Planning](se2/01-project-planning.md)|
+|2|[Project Automation](se2/02-project-automation.md)|
