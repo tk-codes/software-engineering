@@ -64,6 +64,7 @@ Advantages:
 * Extensibility
 
 > Solution => Build Tool
+---
 
 ### 1.3. Build Tool
 
@@ -123,13 +124,58 @@ Concepts:
 * Predefined directory tree ==> consistent across project
 * Automated dependency resolution
 
-**:white_check_mark: Pros**
+:white_check_mark: **Pros**
 
 * More consise => shorter build-files
 * Reusable build-logic (plugins)
 * Automated dependency management
 
-**:x: Cons**
+:x: **Cons**
 
 * Less general and flexible than "imperative" tools
 * Impose a somewhat rigid project/file structure
+
+## 2. Continuous Integration
+
+> Team-members integrate their work frequently. Usually, each person integrates at least daily, leading to multiple integrations per day. - Martin Fowler
+
+**Goal**
+- Always have a runnable product
+- Have fast feedback in case of errors
+  - Automated tests
+  - Compiler errors / warnings
+  - Static analysis tools
+- Allow division of work without
+  - Losing control / overall view of the product state
+  - “Integration hell”
+
+
+![Continuous Integration](http://chercheurs.lille.inria.fr/demarey/pmwiki/images/ci-bigpicture.png)
+
+**10 CI Best Practices**
+1. Maintain a single source repository
+  * Use a source code management system (SCM)
+  * Have one mainline (master) branch for people to work from
+2. Automate the build
+3. Make the build self-testing (unit tests, integration tests)
+  * Purpose: Automated verification of your changes
+4. Everyone commits to the mainline every day (=continuous integration)
+  * Reduce merging effort (change-sets are small)
+  * Find new bugs quickly
+5. Every commit to the mainline should be built
+  * Discover integration issues ASAP
+  * Monitor build status
+  * Fix broken builds immediately
+6. Keep the build fast
+  * Main purpose of CI is to provide rapid feedback. Long builds(10+ minutes) slow down the feedback-loop.
+  * Solution ==> incremental compilation/builds, n-stage build pipeline (eg. compile , test, deploy)
+7. Test in a clone of the production environment
+  * Test-feedback should be as accurate as possible.
+8. Make it easy to get the latest deliverables
+  * Facilitate manual testing, demonstrations, discussions etc.
+  * Provide a download URL (from the build server)
+9. Everyone can see what’s happening
+  * Communicate the state of the mainline build (red / green)
+  * Additional info: commit history, test coverage, quality metrics
+10. Automate deployment (:bangbang: NOT continuous deployment / delivery)
+  * Automatically deploy the product after successful build to a testing / staging environment
