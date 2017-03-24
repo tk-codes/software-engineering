@@ -16,3 +16,4 @@
 |---| ------|
 |1|[Project Planning](se2/01-project-planning.md)|
 |2|[Project Automation](se2/02-project-automation.md)|
+|3|[Software Engineering Practices](se2/03-se-practices.md)|
